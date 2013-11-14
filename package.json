@@ -1,0 +1,17 @@
+{
+  "name": "UI-UX",
+  "description": "Running uiux.de",
+  "author": {
+    "name": "Marcel Böttcher",
+    "url": "http://uiux.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/73inches/uiux.de.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-compass": "~0.6.0"
+  }
+}
