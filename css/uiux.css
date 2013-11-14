@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  background: #b44544;
+  color: #444;
+  font: 17px/27px "FSP-Book", helvetica, arial, sans-serif; }
+
+a {
+  display: inline-block;
+  color: #b44544;
+  text-decoration: none; }
+
+h1, h2, h3 {
+  font-weight: normal; }
+
+h1 {
+  font-size: 54px;
+  line-height: 54px;
+  margin: 40px 0 0; }
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+  margin: 28px 0 10px; }
+
+h3 {
+  font: 20px/27px "FSP-Medium", helvetica, arial, sans-serif;
+  margin: 25px 0 7px; }
+
+p {
+  margin: 0 0 15px; }
+  p.intro {
+    font: 20px/30px "FSP-Medium", helvetica, arial, sans-serif;
+    margin: 0 0 20px; }
+
+strong {
+  font-family: "FSP-Semibold", helvetica, arial, sans-serif;
+  font-weight: normal; }
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 15px 0 25px;
+  line-height: 1.3em;
+  border-bottom: 1px #999 solid; }
+  table td {
+    padding: 5px 10px; }
+    table td.num {
+      text-align: right; }
+  table thead {
+    background: #b44544;
+    color: #fff; }
+  table tbody tr:nth-child(2n) {
+    background: #e8e8e8; }
+  table tbody small {
+    color: #666;
+    display: block; }
+  table tfoot {
+    font-family: "FSP-Semibold", helvetica, arial, sans-serif;
+    font-weight: normal; }
+    table tfoot td {
+      border-top: 3px #999 double; }
+
+time {
+  display: block;
+  margin: 0 0 20px;
+  color: #666; }
+
+header {
+  background: #f3f3f1;
+  padding: 30px 0 20px;
+  margin-bottom: 1px; }
+
+nav {
+  overflow: auto; }
+  nav .logo {
+    float: left; }
+    nav .logo img {
+      width: 95px;
+      height: 53px;
+      border: none; }
+  nav ul {
+    float: right;
+    margin: 5px 0 0;
+    padding: 0; }
+  nav li {
+    display: inline-block;
+    float: left; }
+    nav li a {
+      padding: 9px 16px;
+      color: #b44544; }
+      nav li a.active, nav li a:hover, nav li a:focus {
+        background: #e8e8e8; }
+
+section {
+  background: #f3f3f1;
+  padding: 10px 0 30px;
+  border-bottom: 1px #ddd solid; }
+  section:nth-child(2n+1) {
+    background: #e8e8e8; }
+  section a:hover, section a:focus {
+    text-decoration: underline; }
+
+.wrapper {
+  max-width: 640px;
+  min-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.stage {
+  background: #b44544;
+  color: #f3f3f1; }
+  .stage h1 {
+    font: 60px/60px "FSP-Light", helvetica, arial, sans-serif;
+    text-indent: -0.35em;
+    margin: 40px 0 8px;
+    padding: 0 0 8px;
+    border-bottom: 1px #c56766 solid; }
+  .stage a {
+    color: #f3f3f1;
+    background: #c56766;
+    padding: 7px 10px;
+    margin: 14px 0 0;
+    border-radius: 3px;
+    font: 16px "FSP-Book", helvetica, sans-serif;
+    text-transform: uppercase; }
+
+.home .posts h2 {
+  margin: 28px 0 0px; }
+.home .posts time {
+  margin-bottom: 10px; }
+
+.work section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+.work section li {
+  display: inline-block;
+  width: 195px;
+  margin: 0 15px 0 0; }
+  .work section li p {
+    font-size: 16px; }
+  .work section li h3 {
+    margin: 25px 0 5px; }
+.work .clients {
+  line-height: 1.2em; }
+  .work .clients li {
+    height: 100px; }
+  .work .clients p {
+    color: #777; }
+
+.list h1 {
+  font-size: 38px;
+  line-height: 38px; }
+.list time {
+  margin: 0 0 10px; }
+
+.default h1 {
+  margin-bottom: 18px; }
+
+.bird {
+  position: fixed;
+  top: 200px;
+  right: 0;
+  box-shadow: -2px 1px 2px rgba(0, 0, 0, 0.3);
+  background: #b44544;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 58px;
+  text-align: center;
+  font-size: 30px; }
+  .bird span {
+    display: block;
+    text-indent: -9999em; }
+
+footer {
+  color: #f3f3f1;
+  font-size: 16px;
+  padding: 30px;
+  overflow: auto; }
+  footer h2 {
+    margin-top: 0; }
+  footer a {
+    color: #f3f3f1; }
+  footer div {
+    float: left;
+    max-width: 265px; }
+  footer .first {
+    max-width: 350px;
+    margin: 10px 20px 0 0; }
+  footer address {
+    font-style: normal; }
+  footer ul {
+    margin: 0;
+    padding: 0; }
+  footer .contact {
+    list-style: none;
+    overflow: auto; }
+    footer .contact li {
+      float: left;
+      width: 170px; }
+    footer .contact span {
+      text-indent: -999em;
+      display: inline-block; }
+  footer .social {
+    margin: 44px 0 5px; }
+    footer .social li {
+      display: inline-block;
+      margin-right: 5px; }
+    footer .social a {
+      font-size: 28px;
+      font-weight: bold; }
+  footer p {
+    margin: 0; }
+
+@media (max-width: 760px) {
+  .bird {
+    display: none; } }
+@media (max-width: 483px) {
+  body {
+    font-size: 15px; }
+
+  h1 {
+    font-size: 43px;
+    line-height: 43px;
+    margin: 32px 0 0; }
+
+  h2 {
+    font-size: 24px;
+    line-height: 29px;
+    margin: 22px 0 8px; }
+
+  h3 {
+    font-size: 16px;
+    line-height: 21px;
+    margin: 20px 0 4px; }
+
+  time {
+    margin-bottom: 5px; }
+
+  .stage h1 {
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: 25px; }
+
+  section {
+    padding: 5px 0 10px; }
+
+  header {
+    padding: 0; }
+
+  nav.wrapper {
+    padding: 20px 0 0;
+    text-align: center; }
+  nav .logo {
+    float: none; }
+  nav ul {
+    float: none;
+    border-top: 1px #ddd solid; }
+  nav li {
+    float: none; }
+
+  .work section li {
+    width: auto;
+    display: block;
+    height: auto !important; }
+    .work section li br {
+      display: none; }
+  .work .clients h3 {
+    margin-top: 12px; }
+
+  .list h1 {
+    font-size: 30px;
+    line-height: 30px; }
+
+  .article h1 {
+    font-size: 34px;
+    line-height: 34px; }
+
+  p.intro {
+    font-size: 16px;
+    line-height: 24px; }
+
+  footer {
+    padding: 10px 30px 15px; } }

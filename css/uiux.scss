@@ -1,0 +1,398 @@
+$corporate: #b44544;
+$light: #f3f3f1;
+$focus: #e8e8e8;
+
+body {
+	margin: 0;
+	background: $corporate;
+	color: #444;
+	font: 17px/27px "FSP-Book", helvetica, arial, sans-serif;
+}
+
+a {
+	display: inline-block;
+	color: $corporate;
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 54px;
+	line-height: 54px;
+	margin: 40px 0 0;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 36px;
+	margin: 28px 0 10px;
+}
+
+h3 {
+	font: 20px/27px "FSP-Medium", helvetica, arial, sans-serif;
+	margin: 25px 0 7px;
+}
+
+p {
+	margin: 0 0 15px;
+	&.intro {
+		font: 20px/30px "FSP-Medium", helvetica, arial, sans-serif;
+		margin: 0 0 20px;
+	}
+}
+
+strong {
+	font-family: "FSP-Semibold", helvetica, arial, sans-serif;
+	font-weight: normal;
+}
+
+table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin: 15px 0 25px;
+	line-height: 1.3em;
+	border-bottom: 1px #999 solid;
+	td {
+		padding: 5px 10px;
+		&.num {
+			text-align: right;
+		}
+	}
+	thead {
+		background: $corporate;
+		color: #fff;
+	}
+	tbody {
+		tr {
+			&:nth-child(2n){
+				background: darken($focus, 0);
+			}
+		}
+		small {
+			color: #666;
+			display: block;
+		}
+	}
+	tfoot {
+		font-family: "FSP-Semibold", helvetica, arial, sans-serif;
+		font-weight: normal;
+		td {
+			border-top: 3px #999 double;
+		}
+	}
+}
+
+time {
+	display: block;
+	margin: 0 0 20px;
+	color: #666;
+}
+
+header {
+	background: $light;
+	padding: 30px 0 20px;
+	margin-bottom: 1px;
+}
+
+nav {
+	overflow: auto;
+	.logo {
+		float: left;
+		img {
+			width: 95px;
+			height: 53px;
+			border: none;			
+		}
+	}
+	ul {
+		float: right;
+		margin: 5px 0 0;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		float: left;
+		a {
+			padding: 9px 16px;
+			color: $corporate;
+			&.active, &:hover, &:focus {
+				background: $focus;				
+			}
+		}
+	}
+}
+
+section {
+	background: $light;
+	padding: 10px 0 30px;
+	border-bottom: 1px #ddd solid;
+	&:nth-child(2n+1) {
+		background: $focus;
+	}
+	a:hover, a:focus {
+		text-decoration: underline;
+	}
+
+}
+
+.wrapper {
+	max-width: 640px;
+	min-width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.stage {
+	background: $corporate;
+	color: $light;
+	h1 {
+		font: 60px/60px "FSP-Light", helvetica, arial, sans-serif;
+		text-indent: -0.35em;
+		margin: 40px 0 8px;
+		padding: 0 0 8px;
+		border-bottom: 1px lighten($corporate, 10%) solid;
+	}
+	a {
+		color: $light;
+		background: lighten($corporate, 10%);
+		padding: 7px 10px;
+		margin: 14px 0 0;
+		border-radius: 3px;
+		font: 16px "FSP-Book", helvetica, sans-serif;
+		text-transform: uppercase;
+	}
+}
+
+.home {
+	.posts {
+		h2 {
+			margin: 28px 0 0px;
+		}
+		time {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.work {
+	section {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		li {
+			display: inline-block;
+			width: 195px;
+			margin: 0 15px 0 0;
+			p {
+				font-size: 16px;
+			}
+			h3 {
+				margin: 25px 0 5px;
+			}
+		}
+	}
+	.clients {
+		line-height: 1.2em;
+		li {
+			height: 100px;
+		}
+		p {
+			color: #777;
+		}
+	}
+}
+
+.list {
+	h1 {
+		font-size: 38px;
+		line-height: 38px;
+	}
+	time {
+		margin: 0 0 10px;
+	}
+}
+
+.default {
+	h1 {
+		margin-bottom: 18px;
+	}
+}
+
+.bird {
+	position: fixed;
+	top: 200px;
+	right: 0;
+	box-shadow: -2px 1px 2px rgba(0,0,0,.3);
+	background: $corporate;
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	line-height: 58px;
+	text-align: center;
+	font-size: 30px;
+	span {
+		display: block;
+		text-indent: -9999em;
+	}
+}
+
+
+footer {
+	color: $light;
+	font-size: 16px;
+	padding: 30px;
+	overflow: auto;
+	h2 {
+		margin-top: 0;
+	}
+	a {
+		color: $light;
+	}
+	div {
+		float: left;
+		max-width: 265px;
+	}
+	.first {
+		max-width: 350px;
+		margin: 10px 20px 0 0;
+	}
+	address {
+		font-style: normal;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	.contact {
+		list-style: none;
+		overflow: auto;
+		li {
+			float: left;
+			width: 170px;
+		}
+		span {
+			text-indent: -999em;
+			display: inline-block;
+		}
+	}
+	.social {
+		margin: 44px 0 5px;
+		li {
+			display: inline-block;
+			margin-right: 5px;
+		}
+		a {
+			font-size: 28px;
+			font-weight: bold;
+		}
+	}
+	p {
+		margin: 0;
+	}
+}
+
+@media (max-width: 760px) {
+	.bird {
+		display: none;
+	}
+}
+
+@media (max-width: 483px) {
+	body {
+		font-size: 15px;
+	}
+	h1 {
+		font-size: 43px;
+		line-height: 43px;
+		margin: 32px 0 0;
+	}
+
+	h2 {
+		font-size: 24px;
+		line-height: 29px;
+		margin: 22px 0 8px;
+	}
+
+	h3 {
+		font-size: 16px;
+		line-height: 21px;
+		margin: 20px 0 4px;
+	}
+	time {
+		margin-bottom: 5px;
+	}
+	.stage {
+		h1 {
+			font-size: 48px;
+			line-height: 48px;
+			margin-top: 25px;
+		}
+	}
+	section {
+		padding: 5px 0 10px;
+	}
+	header {
+		padding: 0;
+	}
+	nav {
+		&.wrapper {
+			padding: 20px 0 0;
+			text-align: center;
+		}
+		.logo {
+			float: none;
+		}
+		ul {
+			float: none;
+			border-top: 1px #ddd solid;
+		}
+		li {
+			float: none;
+		}
+	}
+	.work {
+		section {
+			li {
+				width: auto;
+				display: block;
+				height: auto!important;
+				br {
+					display: none;
+				}
+			}
+		}
+		.clients {
+			h3 {
+				margin-top: 12px;
+			}
+		}
+	}
+	.list {
+		h1 {
+			font-size: 30px;
+			line-height: 30px;
+		}
+	}
+	.article {
+		h1 {
+			font-size: 34px;
+			line-height: 34px;
+		}
+	}
+	p.intro {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	footer {
+		padding: 10px 30px 15px;
+	}
+}
