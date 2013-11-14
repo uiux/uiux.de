@@ -1,17 +1,29 @@
-$corporate: #b44544;
-$light: #f3f3f1;
-$focus: #e8e8e8;
+// COLORS
+
+$color_corporate: #b44544;
+$color_grey: #f3f3f1;
+$color_focus: #e8e8e8;
+
+// FONTS
+
+$font_light: "FSP-Light";
+$font_book: "FSP-Book";
+$font_medium: "FSP-Medium";
+$font_semibold: "FSP-Semibold";
+$font_fallback: "Trebuchet MS", sans-serif;
+
+// GENERAL
 
 body {
 	margin: 0;
-	background: $corporate;
+	background: $color_corporate;
 	color: #444;
-	font: 17px/27px "FSP-Book", helvetica, arial, sans-serif;
+	font: 17px/27px $font_book, $font_fallback;
 }
 
 a {
 	display: inline-block;
-	color: $corporate;
+	color: $color_corporate;
 	text-decoration: none;
 }
 
@@ -32,20 +44,20 @@ h2 {
 }
 
 h3 {
-	font: 20px/27px "FSP-Medium", helvetica, arial, sans-serif;
+	font: 20px/27px $font_medium, $font_fallback;
 	margin: 25px 0 7px;
 }
 
 p {
 	margin: 0 0 15px;
 	&.intro {
-		font: 20px/30px "FSP-Medium", helvetica, arial, sans-serif;
+		font: 20px/30px $font_medium, $font_fallback;
 		margin: 0 0 20px;
 	}
 }
 
 strong {
-	font-family: "FSP-Semibold", helvetica, arial, sans-serif;
+	font-family: $font_semibold, $font_fallback;
 	font-weight: normal;
 }
 
@@ -63,13 +75,13 @@ table {
 		}
 	}
 	thead {
-		background: $corporate;
+		background: $color_corporate;
 		color: #fff;
 	}
 	tbody {
 		tr {
 			&:nth-child(2n){
-				background: darken($focus, 0);
+				background: darken($color_focus, 0);
 			}
 		}
 		small {
@@ -78,7 +90,7 @@ table {
 		}
 	}
 	tfoot {
-		font-family: "FSP-Semibold", helvetica, arial, sans-serif;
+		font-family: $font_semibold, $font_fallback;
 		font-weight: normal;
 		td {
 			border-top: 3px #999 double;
@@ -93,7 +105,7 @@ time {
 }
 
 header {
-	background: $light;
+	background: $color_grey;
 	padding: 30px 0 20px;
 	margin-bottom: 1px;
 }
@@ -118,20 +130,20 @@ nav {
 		float: left;
 		a {
 			padding: 9px 16px;
-			color: $corporate;
+			color: $color_corporate;
 			&.active, &:hover, &:focus {
-				background: $focus;				
+				background: $color_focus;				
 			}
 		}
 	}
 }
 
 section {
-	background: $light;
+	background: $color_grey;
 	padding: 10px 0 30px;
 	border-bottom: 1px #ddd solid;
 	&:nth-child(2n+1) {
-		background: $focus;
+		background: $color_focus;
 	}
 	a:hover, a:focus {
 		text-decoration: underline;
@@ -150,22 +162,22 @@ section {
 }
 
 .stage {
-	background: $corporate;
-	color: $light;
+	background: $color_corporate;
+	color: $color_grey;
 	h1 {
-		font: 60px/60px "FSP-Light", helvetica, arial, sans-serif;
+		font: 60px/60px $font_light, $font_fallback;
 		text-indent: -0.35em;
 		margin: 40px 0 8px;
 		padding: 0 0 8px;
-		border-bottom: 1px lighten($corporate, 10%) solid;
+		border-bottom: 1px lighten($color_corporate, 10%) solid;
 	}
 	a {
-		color: $light;
-		background: lighten($corporate, 10%);
+		color: $color_grey;
+		background: lighten($color_corporate, 10%);
 		padding: 7px 10px;
 		margin: 14px 0 0;
 		border-radius: 3px;
-		font: 16px "FSP-Book", helvetica, sans-serif;
+		font: 16px $font_book, $font_fallback;
 		text-transform: uppercase;
 	}
 }
@@ -232,7 +244,7 @@ section {
 	top: 200px;
 	right: 0;
 	box-shadow: -2px 1px 2px rgba(0,0,0,.3);
-	background: $corporate;
+	background: $color_corporate;
 	color: #fff;
 	width: 50px;
 	height: 50px;
@@ -247,7 +259,7 @@ section {
 
 
 footer {
-	color: $light;
+	color: $color_grey;
 	font-size: 16px;
 	padding: 30px;
 	overflow: auto;
@@ -255,7 +267,7 @@ footer {
 		margin-top: 0;
 	}
 	a {
-		color: $light;
+		color: $color_grey;
 	}
 	div {
 		float: left;
